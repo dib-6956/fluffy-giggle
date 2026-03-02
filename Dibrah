@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kirkos Manufacturing College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f4f8;
+        }
+
+        header {
+            background: #002b5c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        nav {
+            background: #004080;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #002b5c;
+            text-align: center;
+        }
+
+        .program-box {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #002b5c;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #004080;
+        }
+
+        footer {
+            background: #002b5c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Kirkos Manufacturing College</h1>
+    <p>Quality Technical and Vocational Training</p>
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="College">
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#register">Register</a>
+</nav>
+
+<div id="home" class="section">
+    <h2>Welcome</h2>
+    <p style="text-align:center;">
+        Kirkos Manufacturing College provides Regular, Night, Weekend and Short-Term programs 
+        to develop skilled professionals in Addis Ababa.
+    </p>
+</div>
+
+<div id="programs" class="section">
+    <h2>Our Programs</h2>
+
+    <div class="program-box">
+        <h3>Regular Program</h3>
+        <p>Full-time weekday classes.</p>
+    </div>
+
+    <div class="program-box">
+        <h3>Night Program</h3>
+        <p>Evening classes for workers.</p>
+    </div>
+
+    <div class="program-box">
+        <h3>Weekend Program</h3>
+        <p>Saturday and Sunday classes.</p>
+    </div>
+
+    <div class="program-box">
+        <h3>Short-Term Program</h3>
+        <p>Skill-based certificate courses.</p>
+    </div>
+</div>
+
+<div id="register" class="section">
+    <h2>Registration Form</h2>
+
+    <form onsubmit="showMessage(event)">
+        
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Birth Date</label>
+        <input type="date" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <label>Select Program</label>
+        <select required>
+            <option value="">Choose Program</option>
+            <option>Regular Program</option>
+            <option>Night Program</option>
+            <option>Weekend Program</option>
+            <option>Short-Term Program</option>
+        </select>
+
+        <label>Upload Level Certificate</label>
+        <input type="file" required>
+
+        <label>Upload ID</label>
+        <input type="file" required>
+
+        <label>Upload Additional Document</label>
+        <input type="file" required>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<footer>
+    Contact Us: info@kirkoscollege.edu.et | +251 900 000 000  
+    <br>
+    © 2026 Kirkos Manufacturing College | Addis Ababa, Ethiopia
+</footer>
+
+<script>
+    function showMessage(event) {
+        event.preventDefault();
+        alert("Application Submitted Successfully!");
+    }
+</script>
+
+</body>
+</html>
